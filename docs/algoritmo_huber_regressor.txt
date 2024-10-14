@@ -1,0 +1,19 @@
+O algoritmo Huber Regressor é um algoritmo de regressão robusta que é menos sensível a outliers em comparação com a regressão linear tradicional. Ele funciona combinando as características da regressão de mínimos quadrados e da regressão de desvio absoluto.
+
+Funcionamento:
+
+Inicialmente, o algoritmo ajusta um modelo de regressão linear aos dados.
+Em seguida, ele calcula os resíduos para cada ponto de dados.
+Para pontos de dados que têm resíduos pequenos (dentro de um determinado limite), o algoritmo usa uma função de perda quadrática, como na regressão de mínimos quadrados.
+Para pontos de dados que têm resíduos grandes (fora do limite), o algoritmo usa uma função de perda linear, como na regressão de desvio absoluto.
+O limite entre resíduos pequenos e grandes é definido por um parâmetro chamado "epsilon".
+O algoritmo ajusta iterativamente o modelo até que a função de perda seja minimizada.
+Vantagens:
+
+Robusto a outliers
+Combina as vantagens da regressão de mínimos quadrados e da regressão de desvio absoluto
+Desvantagens:
+
+Requer a definição do parâmetro "epsilon"
+Pode ser mais lento que a regressão linear tradicional
+Espero que isto ajude!
